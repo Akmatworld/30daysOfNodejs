@@ -1,0 +1,9 @@
+const fs = require('fs');
+
+const filename = 'data.txt';
+
+fs.unlink(filename, (err) => {
+	if (err) 
+		throw err;
+	console.log('File deleted successfully');
+});
